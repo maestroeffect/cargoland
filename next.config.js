@@ -13,11 +13,11 @@ const nextConfig = {
   },
   images: {
     domains: [
-      "server.cargolandfood.com", // Replace with actual API hostname
-      "cargolandfoods-a42f8.firebasestorage.app",
+      process.env.NEXT_PUBLIC_API_HOSTNAME, // Server hostname
+      process.env.NEXT_PUBLIC_STORAGE_HOSTNAME, // Storage hostname
       "demo-api.foodyman.org",
       "lh3.googleusercontent.com",
-    ],
+    ].filter(Boolean), // Prevents errors if env variables are undefined
     minimumCacheTTL: 3600,
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
