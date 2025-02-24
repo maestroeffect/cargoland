@@ -12,23 +12,11 @@ const nextConfig = {
     ignoreBuildErrors: false,
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: process.env.NEXT_PUBLIC_PROTOCOL,
-        hostname: process.env.NEXT_PUBLIC_API_HOSTNAME,
-      },
-      {
-        protocol: process.env.NEXT_PUBLIC_PROTOCOL,
-        hostname: process.env.NEXT_PUBLIC_STORAGE_HOSTNAME,
-      },
-      {
-        protocol: process.env.NEXT_PUBLIC_PROTOCOL,
-        hostname: "demo-api.foodyman.org",
-      },
-      {
-        protocol: process.env.NEXT_PUBLIC_PROTOCOL,
-        hostname: "lh3.googleusercontent.com",
-      },
+    domains: [
+      "server.cargolandfood.com", // Replace with actual API hostname
+      "cargolandfoods-a42f8.firebasestorage.app",
+      "demo-api.foodyman.org",
+      "lh3.googleusercontent.com",
     ],
     minimumCacheTTL: 3600,
     dangerouslyAllowSVG: true,
