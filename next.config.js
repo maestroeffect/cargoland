@@ -2,6 +2,9 @@
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
   enabled: process.env.ANALYZE === "true",
 });
+console.log("API Hostname:", process.env.NEXT_PUBLIC_API_HOSTNAME);
+console.log("Storage Hostname:", process.env.NEXT_PUBLIC_STORAGE_HOSTNAME);
+
 const nextConfig = {
   reactStrictMode: false,
   swcMinify: true,
