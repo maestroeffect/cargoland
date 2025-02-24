@@ -9,13 +9,13 @@ importScripts("https://www.gstatic.com/firebasejs/8.2.0/firebase-messaging.js");
 
 // Initialize the Firebase app in the service worker by passing the generated config
 const firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: "",
-  measurementId: "",
+  apiKey: "AIzaSyBX35h8ydXcTZlrzAN90JAUuIkThS-yHgw",
+  authDomain: "cargolandfoods-a42f8.firebaseapp.com",
+  projectId: "cargolandfoods-a42f8",
+  storageBucket: "cargolandfoods-a42f8.firebasestorage.app",
+  messagingSenderId: "93074006303",
+  appId: "1:93074006303:web:0105805689601cbbbf902a",
+  measurementId: "G-46SQRZF8YY",
 };
 
 firebase.initializeApp(firebaseConfig);
